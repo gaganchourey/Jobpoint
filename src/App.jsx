@@ -31,7 +31,7 @@ const App = () => {
       position: "Backend Developer",
       tag1: "Full Time",
       tag2: "Mid Level",
-      pay: "$70",
+      pay: "₹7LPA",
       location: "Hyderabad, India",
     },
     {
@@ -48,7 +48,7 @@ const App = () => {
       logo: "https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456",
       company: "Netflix",
       date_posted: "10 days ago",
-      position: "Machine Learning Engineer",
+      position: "ML Engineer",
       tag1: "Full Time",
       tag2: "Senior Level",
       pay: "$110",
@@ -61,7 +61,7 @@ const App = () => {
       position: "Cloud Solutions Architect",
       tag1: "Full Time",
       tag2: "Mid Level",
-      pay: "$85",
+      pay: "9LPA",
       location: "Bangalore, India",
     },
     {
@@ -101,25 +101,25 @@ const App = () => {
       img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=688",
       name: "Kanak",
       words:
-        "JobFinder made my dream job search easy! I landed a developer role at Amazon within weeks!",
+        "Jobpoint made my dream job search easy! I landed a developer role at Amazon within weeks!",
     },
     {
       img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=687",
       name: "Naman",
       words:
-        "Thanks to JobFinder, I got placed in Microsoft. The portal’s job alerts and resume tips really helped!",
+        "Thanks to Jobpoint, I got placed in Microsoft. The portal’s job alerts and resume tips really helped!",
     },
     {
       img: "https://images.unsplash.com/photo-1602233158242-3ba0ac4d2167?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1036",
       name: "Mehek",
       words:
-        "JobFinder is the best platform for freshers! I secured a full-time position at Google effortlessly.",
+        "Jobpoint is the best platform for freshers! I secured a full-time position at Google effortlessly.",
     },
     {
       img: "https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=765",
       name: "Nayan",
       words:
-        "I never thought finding my first tech job would be this easy—JobFinder truly delivers results!",
+        "I never thought finding my first tech job would be this easy—Jobpoint truly delivers results!",
     },
   ];
 

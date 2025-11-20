@@ -16,7 +16,7 @@ const Footer = () => {
         {/* Right Section — Copyright */}
         <div className="text-sm text-gray-900 mt-4 md:mt-0 text-center">
           © {new Date().getFullYear()} <span className="font-semibold">Jobpoint</span>. All Rights Reserved.
-          <p className="text-sm">Made with ❤️ by Gagan !!</p>
+          <p className="text-sm">📍Point: Where you come for carrer, not for tea ☕ <br/> Made with ❤️ by Gagan !! </p>
         </div>
       </div>
     </footer>

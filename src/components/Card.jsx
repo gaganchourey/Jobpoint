@@ -1,43 +1,72 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Briefcase, Zap } from "lucide-react";
 
 const Card = () => {
   return (
-    <div className="w-full px-6 md:px-12 lg:px-20 flex flex-col "> 
-    
-      {/* This gives equal left & right margins */}
-      
-      <section className="hero bg-linear-to-br from-purple-600 via-purple-500 to-purple-700 rounded-3xl p-10 shadow-2xl">
-        
-        <div className="hero-content flex flex-col lg:flex-row justify-between items-center gap-10">
-          
-          
-
-          {/* LEFT TEXT - stays LEFT ALIGNED */}
-          <div className="hero-text flex-1 text-left space-y-6">
-           
-            <h1 className="text-4xl font-bold text-white leading-tight">
-              <span>Jobpoint-</span> <br/>Find Your Dream Job or Hire the Best Talent
+    <div className="w-full h-100% px-6 md:px-12 lg:px-20 flex items-center justify-center p-4 ">
+      <section
+        className="
+          bg-linear-to-br from-purple-600 via-purple-400 to-purple-700
+          rounded-3xl p-16 shadow-2xl 
+          animate-[fadeIn_0.8s_ease] w-full 
+          min-h-[550px]
+          flex items-center 
+        "
+      >
+        <div
+          className="
+            flex flex-col lg:flex-row items-center justify-between 
+            gap-14 lg:gap-20
+          "
+        >
+          {/* LEFT TEXT */}
+          <div
+            className="
+              flex-1 text-left space-y-6 
+              animate-[slideLeft_1s_ease] ml-20!
+            "
+          >
+            <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+              Jobpoint –
+              <br />
+              Find Your Dream Job or Hire the Best Talent
             </h1>
 
             <p className="text-white/80 text-lg max-w-xl">
-              Join thousands of professionals and employers on JobBoardPro — your one-stop platform to discover, connect, and grow your career.
+              Join thousands of professionals and employers — your one-stop
+              platform to discover, connect, and grow your career.
             </p>
 
             <Link to="/postjob">
-              <button className="hero-btn px-8 py-3 rounded-full bg-blue-700 text-blue-700 font-bold hover:scale-105 transition">
+              <button
+                className="
+                  px-4 py-3 rounded 
+                  bg-white text-purple-700 font-semibold
+                  hover:scale-110 hover:shadow-xl
+                  transition-all duration-300
+                "
+              >
                 Post a Job
               </button>
             </Link>
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="hero-image flex-1 flex justify-center">
+          <div
+            className="
+              flex-1 flex justify-end
+              animate-[slideRight_1s_ease]
+              mr-4!
+            "
+          >
             <img
               src="https://cdni.iconscout.com/illustration/premium/thumb/job-interview-illustration-download-in-svg-png-gif-file-formats--hiring-human-resources-hr-business-pack-illustrations-4182832.png"
-              alt="illustration"
-              className="w-80 md:w-96 drop-shadow-xl"
+              alt="Hero"
+              className="
+                w-72 md:w-96 xl:w-[420px]
+                drop-shadow-2xl
+                hover:scale-105 transition-transform duration-500
+              "
             />
           </div>
         </div>
