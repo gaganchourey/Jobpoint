@@ -21,7 +21,7 @@ const App = () => {
       position: "Frontend Engineer",
       tag1: "Full Time",
       tag2: "Junior Level",
-      pay: "$65/hour",
+      pay: "$65",
       location: "Menlo Park, USA",
     },
     {
@@ -31,7 +31,7 @@ const App = () => {
       position: "Backend Developer",
       tag1: "Full Time",
       tag2: "Mid Level",
-      pay: "$70/hour",
+      pay: "$70",
       location: "Hyderabad, India",
     },
     {
@@ -41,7 +41,7 @@ const App = () => {
       position: "iOS Developer",
       tag1: "Part Time",
       tag2: "Senior Level",
-      pay: "$90/hour",
+      pay: "$90",
       location: "Cupertino, USA",
     },
     {
@@ -51,7 +51,7 @@ const App = () => {
       position: "Machine Learning Engineer",
       tag1: "Full Time",
       tag2: "Senior Level",
-      pay: "$110/hour",
+      pay: "$110",
       location: "Los Gatos, USA",
     },
     {
@@ -61,7 +61,7 @@ const App = () => {
       position: "Cloud Solutions Architect",
       tag1: "Full Time",
       tag2: "Mid Level",
-      pay: "$85/hour",
+      pay: "$85",
       location: "Bangalore, India",
     },
     {
@@ -71,7 +71,7 @@ const App = () => {
       position: "Data Scientist",
       tag1: "Full Time",
       tag2: "Junior Level",
-      pay: "$75/hour",
+      pay: "$75",
       location: "Redmond, USA",
     },
     {
@@ -81,7 +81,7 @@ const App = () => {
       position: "AI Research Engineer",
       tag1: "Full Time",
       tag2: "Senior Level",
-      pay: "$95/hour",
+      pay: "$95",
       location: "New York, USA",
     },
     {
@@ -91,7 +91,7 @@ const App = () => {
       position: "Software Engineer",
       tag1: "Full Time",
       tag2: "Mid Level",
-      pay: "$80/hour",
+      pay: "$80",
       location: "Austin, USA",
     },
   ]);
