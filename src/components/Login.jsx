@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
+  const navigate = useNavigate();
 
-  // Controlled input states
+  // Controlled input state
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -12,21 +14,17 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (isLogin) {
-      console.log("Login data:", { email, password });
-      // API call here
-    } else {
-      console.log("Signup data:", { name, email, password });
-      // API call here
+    // Perform any validation you want
+    if (email && password) {
+      // redirect to Coming Soon page
+      navigate("/soon");
     }
   };
 
   return (
     <div className="h-full flex items-center justify-center bg-gray-100 px-4 ">
-      <div className="w-full max-w-md bg-purple-100 shadow-purple-900 shadow-lg rounded-xl  md:p-8">
+      <div className="w-full max-w-md bg-purple-100 shadow-purple-900 shadow-lg rounded-xl md:p-8">
 
-
-        {/* Heading */}
         <h2 className="text-2xl font-bold text-center text-purple-600 mb-2">
           {isLogin ? "Login" : "Sign Up"}
         </h2>
@@ -35,10 +33,8 @@ const Login = () => {
           {isLogin ? "Welcome back!" : "Create your account"}
         </p>
 
-        {/* FORM */}
         <form onSubmit={handleSubmit} className="space-y-4">
 
-          {/* Name - only visible in signup */}
           {!isLogin && (
             <input
               type="text"
@@ -75,10 +71,8 @@ const Login = () => {
           >
             {isLogin ? "Login" : "Sign Up"}
           </button>
-
         </form>
 
-        {/* Switch Login <-> Signup */}
         <p className="text-center mt-6 text-gray-600">
           {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
           <span

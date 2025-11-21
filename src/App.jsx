@@ -9,6 +9,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Apply from "./components/Apply";
 import Postjob from "./components/Postjob";
 import Login from "./components/Login";
+import Soon from "./components/Soon";
 
 const App = () => {
 
@@ -133,6 +134,7 @@ const App = () => {
         {/* Hide Card on Apply & PostJob pages */}
         {location.pathname !== "/apply" &&
           location.pathname !== "/postjob" &&
+          location.pathname !== "/soon" &&
           location.pathname !== "/login" && <Card />}
 
         <Routes>
@@ -167,12 +169,11 @@ const App = () => {
           <Route path="/apply" element={<Apply />} />
 
           {/* ✅ Post Job Page — pass setJobOpening */}
-          <Route
-            path="/postjob"
-            element={<Postjob setJobs={setJobOpening} />}
-          />
+          <Route path="/postjob" element={<Postjob setJobs={setJobOpening} />} />
 
           <Route path="/login" element={<Login />} />
+
+          <Route path="/soon" element={<Soon />}/>
         </Routes>
       </main>
 
